@@ -54,3 +54,8 @@ player = {
     age: 34,
     country: "Bangladesh"
 };
+var developer = {
+    name: "Mir Hussain",
+    age: 68,
+    field: "Web Development"
+};

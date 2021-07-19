@@ -87,3 +87,23 @@ player = {
     age: 34,
     country: "Bangladesh"
 }
+
+
+
+//* We can take our object type declaring game one step farther by using interface.
+//* Instead of doing something like {name : string, age: number, country : string},
+//* we can declare an interface.
+//* We can make a key: value pair optional by adding a "?" in front of ":"
+
+interface IDeveloper {
+    name : string,
+    age : number,
+    field: string,
+    salary?: number,
+}
+
+let developer : IDeveloper = {
+    name : "Mir Hussain",
+    age : 68,
+    field: "Web Development"
+}
