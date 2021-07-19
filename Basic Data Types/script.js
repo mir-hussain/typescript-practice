@@ -1,5 +1,6 @@
 //* The most common primitive data type in TypeScript is String, Number and Boolean.
-//* Other data types are Any, Array, Object, Function, Enum, Interface, null and undefined.
+//* Other data types are: 
+//* Any, Array, Object, Function, Enum, Interface, null and undefined.
 var myName = "Mir";
 //* By doing this, the typescript will infer the data type
 //* and it will set the data type of myName to string ( myName: string )
@@ -12,3 +13,9 @@ age = 68;
 age = "banana";
 //* By setting a data type to any, the typescript will accept any data type.
 //* This spoils the main purpose of using typescript.
+//* We can avoid that by explicitly declaring the data type.
+var myAge;
+//* The general syntax of declaring a data type is => 
+//* [variable] : [preferred data type]
+//* By doing this, if we try to assign banana to myAge 
+//* we will encounter a big fat red error
