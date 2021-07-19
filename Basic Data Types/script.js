@@ -1,11 +1,13 @@
 //* The most common primitive data type in TypeScript is string, number and boolean.
 //* Other data types are: 
 //* any, array, object, Function, enum, interface, type alias, null and undefined.
+//! Infer
 var myName = "Mir Hussain";
 console.log("My name " + myName);
 //* By doing this, the typescript will infer the data type
 //* and it will set the data type of myName to string ( myName: string )
 //* so know i wont be able to assign any other data type. For example myName = 12 
+//! Explicit
 var age;
 //* If I declare a variable without assigning any data 
 //* typescript wont be able to infer the data type,
@@ -25,12 +27,21 @@ myAge = 68;
 //* [variable] : [preferred data type]
 //* By doing this, if we try to assign banana to myAge 
 //* we will encounter a big, fat red error
+//! number, string and boolean
+var job;
+job = "Web Development";
+var salary;
+salary = 60000;
+var active;
+active = true;
+//! union "|"
 //* What if, we want a variable to have multiple types?
 //* In this situation we can use union type. Using union is very easy. 
 //* we just need to use a single"pipe" to separate our types.
 var id;
 id = 123;
 id = "ABC";
+//! array "[]"
 //* We can declare array type by using [] 
 var myBrothers = ["Faysal", "Siddique", "Sojib", "Naim"];
 console.log("Arrya of strings ", myBrothers);
@@ -65,6 +76,6 @@ var developer = {
     age: 68,
     field: "Web Development"
 };
-console.log("This object id created by using interface " + developer);
+console.log("This object is created by using interface");
+console.log(developer);
 console.log("--------------------------------");
-//

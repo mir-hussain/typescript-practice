@@ -2,6 +2,9 @@
 //* Other data types are: 
 //* any, array, object, Function, enum, interface, type alias, null and undefined.
 
+
+//! Infer
+
 let myName = "Mir Hussain";
 console.log("My name " + myName)
 
@@ -10,6 +13,8 @@ console.log("My name " + myName)
 //* so know i wont be able to assign any other data type. For example myName = 12 
 
 
+
+//! Explicit
 
 let age;
 
@@ -27,10 +32,6 @@ console.log("--------------------------------")
 
 //* By setting a data type to any, the typescript will accept any data type.
 //* This spoils the main purpose of using typescript.
-
-
-
-
 //* We can avoid that by explicitly declaring the data type.
 
 let myAge : number;
@@ -41,7 +42,18 @@ myAge = 68
 //* By doing this, if we try to assign banana to myAge 
 //* we will encounter a big, fat red error
 
+//! number, string and boolean
 
+let job : string;
+job = "Web Development"
+
+let salary: number;
+salary = 60000;
+
+let active : boolean;
+active = true;
+
+//! union "|"
 
 //* What if, we want a variable to have multiple types?
 //* In this situation we can use union type. Using union is very easy. 
@@ -51,6 +63,10 @@ let id : (number | string);
 
 id = 123;
 id = "ABC"
+
+
+
+//! array "[]"
 
 //* We can declare array type by using [] 
 
@@ -117,9 +133,9 @@ let developer : IDeveloper = {
     field: "Web Development"
 }
 
-console.log("This object id created by using interface " + developer)
+console.log("This object is created by using interface")
+console.log(developer);
 console.log("--------------------------------")
 
 
 
-//
