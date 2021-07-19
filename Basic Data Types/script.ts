@@ -1,6 +1,6 @@
-//* The most common primitive data type in TypeScript is String, Number and Boolean.
+//* The most common primitive data type in TypeScript is string, number and boolean.
 //* Other data types are: 
-//* Any, Array, Object, Function, Enum, Interface, null and undefined.
+//* any, array, object, Function, enum, interface, type alias, null and undefined.
 
 let myName = "Mir";
 
@@ -28,4 +28,13 @@ let myAge : number;
 //* The general syntax of declaring a data type is => 
 //* [variable] : [preferred data type]
 //* By doing this, if we try to assign banana to myAge 
-//* we will encounter a big fat red error
+//* we will encounter a big, fat red error
+
+
+//* We can declare array type by using [] 
+
+let myBrothers : string[] = ["Faysal", "Siddique", "Sojib", "Naim" ]
+
+//* We can also define the type of array by doing something number[] or string[]
+//* In myBrothers array, we can't add anything but string.
+
