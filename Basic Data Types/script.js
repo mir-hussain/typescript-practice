@@ -59,3 +59,5 @@ var developer = {
     age: 68,
     field: "Web Development"
 };
+console.log("This object id created by using interface " + developer);
+console.log("--------------------------------");

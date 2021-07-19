@@ -92,7 +92,7 @@ player = {
 
 //* We can take our object type declaring game one step farther by using interface.
 //* Instead of doing something like {name : string, age: number, country : string},
-//* we can declare an interface.
+//* we can declare an interface. Interface works like a blue print.
 //* We can make a key: value pair optional by adding a "?" in front of ":"
 
 interface IDeveloper {
@@ -107,3 +107,9 @@ let developer : IDeveloper = {
     age : 68,
     field: "Web Development"
 }
+
+console.log("This object id created by using interface " + developer)
+console.log("--------------------------------")
+
+
+
