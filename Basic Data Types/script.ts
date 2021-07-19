@@ -69,7 +69,7 @@ person = {
 
 person = [1, 2, 3]
 
-let greeting = person = (firstName, lastName) => {
+let greeting = person = (firstName: string, lastName: string) => {
     return `Hello ${firstName} ${lastName}`
 }
 
@@ -77,3 +77,13 @@ let greet =  greeting("Mir", "Hussain")
 
 console.log("This function is using data type object => " + greet);
 console.log("--------------------------------")
+
+//* The better way to declare a object is:
+
+let player : {name : string, age: number, country : string}
+
+player = {
+    name : "Shakib Al Hasan",
+    age: 34,
+    country: "Bangladesh"
+}

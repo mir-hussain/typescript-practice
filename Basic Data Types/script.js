@@ -47,3 +47,10 @@ var greeting = person = function (firstName, lastName) {
 var greet = greeting("Mir", "Hussain");
 console.log("This function is using data type object => " + greet);
 console.log("--------------------------------");
+//* The better way to declare a object is:
+var player;
+player = {
+    name: "Shakib Al Hasan",
+    age: 34,
+    country: "Bangladesh"
+};
