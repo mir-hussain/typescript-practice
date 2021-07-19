@@ -25,6 +25,12 @@ myAge = 68;
 //* [variable] : [preferred data type]
 //* By doing this, if we try to assign banana to myAge 
 //* we will encounter a big, fat red error
+//* What if, we want a variable to have multiple types?
+//* In this situation we can use union type. Using union is very easy. 
+//* we just need to use a single"pipe" to separate our types.
+var id;
+id = 123;
+id = "ABC";
 //* We can declare array type by using [] 
 var myBrothers = ["Faysal", "Siddique", "Sojib", "Naim"];
 console.log("Arrya of strings ", myBrothers);
@@ -61,3 +67,4 @@ var developer = {
 };
 console.log("This object id created by using interface " + developer);
 console.log("--------------------------------");
+//

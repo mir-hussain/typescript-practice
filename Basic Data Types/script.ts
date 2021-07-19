@@ -43,6 +43,15 @@ myAge = 68
 
 
 
+//* What if, we want a variable to have multiple types?
+//* In this situation we can use union type. Using union is very easy. 
+//* we just need to use a single"pipe" to separate our types.
+
+let id : (number | string);
+
+id = 123;
+id = "ABC"
+
 //* We can declare array type by using [] 
 
 let myBrothers : string[] = ["Faysal", "Siddique", "Sojib", "Naim" ]
@@ -113,3 +122,4 @@ console.log("--------------------------------")
 
 
 
+//
