@@ -3,11 +3,13 @@
 //* any, array, object, Function, enum, interface, type alias, null and undefined.
 
 let myName = "Mir Hussain";
-console.log("My name" + myName)
+console.log("My name " + myName)
 
 //* By doing this, the typescript will infer the data type
 //* and it will set the data type of myName to string ( myName: string )
 //* so know i wont be able to assign any other data type. For example myName = 12 
+
+
 
 let age;
 
@@ -16,15 +18,18 @@ let age;
 //* hence it will set the data type to any.
 
 age = 68
-console.log("Age before re-assignment" + age);
+console.log("Age before re-assignment " + age);
 console.log("--------------------------------")
 
 age = "banana";
-console.log("age after re-assignment" + age);
+console.log("age after re-assignment " + age);
 console.log("--------------------------------")
 
 //* By setting a data type to any, the typescript will accept any data type.
 //* This spoils the main purpose of using typescript.
+
+
+
 
 //* We can avoid that by explicitly declaring the data type.
 
@@ -41,9 +46,34 @@ myAge = 68
 //* We can declare array type by using [] 
 
 let myBrothers : string[] = ["Faysal", "Siddique", "Sojib", "Naim" ]
-console.log("Arrya of strings", myBrothers);
+console.log("Arrya of strings ", myBrothers);
 console.log("--------------------------------")
 
-//* We can also define the type of array by doing something number[] or string[]
+//* We can also define the type of array by doing something like number[] or string[]
 //* In myBrothers array, we can't add anything but string.
 
+
+
+//* We can declare object type by using : object
+
+let person : object;
+
+person = {
+    name: "Mir Hussain",
+    profession: "Web Developer"
+}
+
+//* This is totally fine, but there is a problem with this approach.
+//* In JavaScript array and functions are considered as object.
+//* so by using : object we can do something like this => 
+
+person = [1, 2, 3]
+
+let greeting = person = (firstName, lastName) => {
+    return `Hello ${firstName} ${lastName}`
+}
+
+let greet =  greeting("Mir", "Hussain")
+
+console.log("This function is using data type object => " + greet);
+console.log("--------------------------------")
